@@ -1,5 +1,4 @@
 <template>
-  <MainContent>
     <section class="min-h-dvh flex flex-col justify-center gap-16">
       <div class="flex flex-col gap-8 items-center md:items-start">
         <img src="@/assets/images/logo.svg" alt="devstage" width="108.5" height="30" />
@@ -54,11 +53,9 @@
         </form>
       </div>
     </section>
-  </MainContent>
 </template>
 
 <script setup lang="ts">
-import MainContent from '@/components/organisms/MainContent.vue'
 import { ArrowRight, Radio, User, Mail } from 'lucide-vue-next'
 import Button from '@/components/atoms/Button/Button.vue'
 import { InputRoot, InputIcon, InputField } from '@/components/atoms/Input'
