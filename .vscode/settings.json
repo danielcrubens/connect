@@ -1,0 +1,13 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  
+  "[typecript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.codeActionsOnSave": {
+    "quickFix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+}
