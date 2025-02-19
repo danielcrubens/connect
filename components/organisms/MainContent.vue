@@ -1,6 +1,0 @@
-<template>
-  <main class="max-w[1240px] mx-auto px-5 py-8 md:py-0">
-    <slot/>
-  </main>
-</template>
-
