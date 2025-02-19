@@ -5,5 +5,6 @@ export interface ButtonProps {
   value?: string | number
   form?: string
   class?: string
-  onClick?: () => void
+  onClick?: (event: MouseEvent) => void
+
 }

@@ -10,4 +10,5 @@ export interface InputFieldProps {
   placeholder?: string
   type?: string
   class?: string
+  readonly?: boolean
 }
