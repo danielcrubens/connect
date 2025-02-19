@@ -3,9 +3,9 @@
         <InputIcon>
           <Link :size="18" />
         </InputIcon>
-        <InputField :value="defaultValue" readonly />
-        <IconButton class="-mr-2">
-          <Copy :size="18" />
+        <InputField :modelValue="linkInvite" readonly />
+        <IconButton class="-mr-2" @click="handleClick ">
+          <Copy :size="18"  />
         </IconButton>
       </InputRoot>
 </template>
@@ -14,5 +14,12 @@
 import {Copy,Link} from 'lucide-vue-next'
 import IconButton from '@/components/atoms/Button/IconButton.vue'
 import { InputField, InputIcon, InputRoot } from '@/components/atoms/Input'
-const defaultValue = 'http://localhost:3000/invite/123'
+import type { InviteLinkProps } from '@/types/input'
+
+const props = defineProps<InviteLinkProps>()
+
+const handleClick = () => {
+  navigator.clipboard.writeText(props.linkInvite)
+}
+
 </script>

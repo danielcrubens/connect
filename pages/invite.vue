@@ -22,7 +22,7 @@
           </p>
         </div>
       </div>
-     <InviteLink/>
+      <InviteLink :link-invite="LinkInvite" />
      <Stats/>
     </div>
       <Raking/>
@@ -33,4 +33,7 @@
 import Raking from '@/components/organisms/Ranking.vue'
 import Stats from '@/components/organisms/Stats.vue'
 import InviteLink from '@/components/organisms/InviteLink.vue'
+import { ref } from 'vue';
+
+const LinkInvite = ref('http://localhost:3000/invite/3291381203801293812313')
 </script>

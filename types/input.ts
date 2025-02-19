@@ -12,3 +12,6 @@ export interface InputFieldProps {
   class?: string
   readonly?: boolean
 }
+export interface InviteLinkProps {
+  linkInvite: string
+}
