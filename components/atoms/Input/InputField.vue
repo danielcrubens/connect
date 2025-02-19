@@ -7,6 +7,7 @@
     :class="['flex-1 outline-0 placeholder-gray-400', $attrs.class as string]"
     :placeholder="placeholder"
     :type="type"
+    :readonly="readonly"
     v-bind="$attrs"
   />
 </template>
